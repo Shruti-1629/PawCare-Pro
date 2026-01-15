@@ -35,26 +35,6 @@ The platform provides structured care information for various pets through a cle
 - Turtles  
 
 
-## 📁 Project Structure
-
-PawCare-Pro/
-├─ index.html
-├─ about.html
-├─ services.html
-├─ contact.html
-├─ dog.html
-├─ hamster.html
-├─ css/
-│ ├─ style.css
-│ ├─ about.css
-│ ├─ services.css
-│ └─ contact.css
-├─ js/
-│ └─ script.js
-└─ README.md
-
-
-
 ## 🧠 Key Learnings
 
 - Practical use of **DOM manipulation and event handling**
@@ -84,4 +64,5 @@ Frontend Developer
 
 
 This project was built for learning and practice purposes to strengthen frontend development skills and demonstrate real-world web development concepts.
+
 
