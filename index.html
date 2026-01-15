@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PawCare Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🐾 PawCare</div>
+  <nav>
+    <a href="pet.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  
+  
+    <button class="btn" onclick="logout()">Logout</button>
+
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Modern Care For Every Pet</h1>
+    <p>Trusted guidance, emergency tips, and love-driven care</p>
+    <!-- <a href="#pets" class="btn">Explore Services</a> -->
+
+    <button class="btn" onclick="handleExplore()">Explore Services</button>
+
+  
+  </div>
+  <img src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/fi/art/5e5d07a1c3e75.jpeg" alt="Pets" class="hero-img">
+</section>
+
+<!-- PET CARDS -->
+<section class="section" id="pets">
+  <h2>Pets We Care For</h2>
+  <div class="pet-grid">
+    <div class="pet-card" onclick="openPet('dog')">
+      <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Golden-Retriever.jpg?v=1645179525" alt="Dog">
+      <h3>Dogs</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('cat')">
+      <img src="https://img.freepik.com/free-photo/portrait-beautiful-purebred-pussycat-with-shorthair-orange-collar-neck-sitting-floor-reacting-camera-flash-scared-looking-light-indoor_8353-12551.jpg?semt=ais_hybrid&w=740&q=80" alt="Cat">
+      <h3>Cats</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('bird')">
+      <img src="https://t4.ftcdn.net/jpg/08/89/00/87/360_F_889008734_Jt9O8zCFJMmKaQIJx2l1oXIXDgwzxwvp.jpg" alt="Bird">
+      <h3>Birds</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('fish')">
+      <img src="https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg?cs=srgb&dl=pexels-cubir-128756.jpg&fm=jpg" alt="Fish">
+      <h3>Fish</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('rabbit')">
+      <img src="https://i.pinimg.com/736x/2d/15/74/2d157475da3f359c2bfcd10875aaa872.jpg" alt="Rabbit">
+      <h3>Rabbits</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('hamster')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVHKR4HVGAcZ-q2FksUhKEnxy5Dd71wxYJmQ&s" alt="Hamster">
+      <h3>Hamsters</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('turtle')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV33tSX98KAXON7gT_zu1fKrugZ2BkHsIAXA&s" alt="Turtle">
+      <h3>Turtles</h3>
+    </div>
+    <div class="pet-card" onclick="openPet('parrot')">
+      <img src="https://i.pinimg.com/474x/69/e2/e9/69e2e9cd082c665dd0dff0fd98f79503.jpg" alt="Parrot">
+      <h3>Parrots</h3>
+    </div>
+  </div>
+</section>
+
+<!-- PET KNOWLEDGE SECTION -->
+<section class="pet-article-section">
+
+  <h2>Pet Care Insights</h2>
+
+  <!-- DOG ARTICLE -->
+  <div class="pet-article">
+    <img src="https://supertails.com/cdn/shop/articles/istockphoto-1433858575-612x612_0417e11a-10e7-41dc-a29f-323cb146b58b.jpg?v=1744350998" alt="Dog Care">
+    <div class="pet-text">
+      <h3>Understanding Dog Care</h3>
+      <p>Dogs are social animals that thrive on routine, training, and bonding with their owners.</p>
+      <p>Daily walks and playtime help maintain physical and mental health.</p>
+      <p>A balanced diet based on breed and age is essential for growth and energy.</p>
+      <p>Grooming helps prevent skin problems, tangles, and infections.</p>
+      <p>Vaccinations and regular vet checkups are crucial for long-term health.</p>
+    </div>
+  </div>
+
+  <!-- CAT ARTICLE -->
+  <div class="pet-article reverse">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCbCBt-G-QDajSNQgiSv4rXzHreLNrtjp1ww&s" alt="Cat Care">
+    <div class="pet-text">
+      <h3>Caring for Cats</h3>
+      <p>Cats are independent but emotionally sensitive animals.</p>
+      <p>Provide a clean litter box and fresh water daily.</p>
+      <p>Nutrition should be age-appropriate to maintain health and prevent obesity.</p>
+      <p>Regular grooming reduces hairballs and keeps skin healthy.</p>
+      <p>Keep them mentally stimulated with toys and scratching posts.</p>
+    </div>
+  </div>
+
+  <!-- BIRD ARTICLE -->
+  <div class="pet-article">
+    <img src="https://play-lh.googleusercontent.com/Rp-62HR_YDwogTe8VbLPt9eOSyT5EsVAvBIu_4XqAKLKI9b1clMSPcaXUALQJrteFhV_" alt="Bird Care">
+    <div class="pet-text">
+      <h3>Bird Health & Habitat</h3>
+      <p>Birds need spacious cages and daily cleaning to prevent disease.</p>
+      <p>Provide a balanced diet rich in seeds, fruits, and vegetables.</p>
+      <p>Sunlight exposure supports vitamin absorption and feather health.</p>
+      <p>Social interaction is important to reduce stress and boredom.</p>
+      <p>Regular vet checkups help catch illnesses early.</p>
+    </div>
+  </div>
+
+  <!-- RABBIT ARTICLE -->
+  <div class="pet-article reverse">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEa43RuYcgEAtaaHOsECAvuWvwBrO_Rp821A&s" alt="Rabbit Care">
+    <div class="pet-text">
+      <h3>Rabbit Care Tips</h3>
+      <p>Rabbits require clean, spacious enclosures with soft bedding.</p>
+      <p>Provide hay, vegetables, and fresh water for proper nutrition.</p>
+      <p>Regular grooming prevents matting and hair ingestion.</p>
+      <p>Daily exercise helps maintain physical health.</p>
+      <p>Monitor for dental issues and visit a vet periodically.</p>
+    </div>
+  </div>
+
+  <!-- HAMSTER ARTICLE -->
+  <div class="pet-article">
+    <img src="https://supertails.com/cdn/shop/articles/1-1-1701264525760.jpg?v=1764233556" alt="Hamster Care">
+    <div class="pet-text">
+      <h3>Hamster Care Tips</h3>
+      <p>Hamsters are nocturnal and need a quiet environment.</p>
+      <p>Provide a balanced diet of pellets, seeds, and fresh vegetables.</p>
+      <p>Include tunnels, wheels, and toys to keep them active.</p>
+      <p>Clean the cage weekly to prevent odor and illness.</p>
+      <p>Handle them gently and regularly for socialization.</p>
+    </div>
+  </div>
+
+  <!-- PARROT ARTICLE -->
+  <div class="pet-article reverse">
+    <img src="https://cdn.shopify.com/s/files/1/0617/3622/2964/files/parrot-care-101.png?v=1748409242" alt="Parrot Care">
+    <div class="pet-text">
+      <h3>Parrot Care Tips</h3>
+      <p>Parrots are intelligent and social; daily interaction is key.</p>
+      <p>Provide a varied diet of seeds, fruits, and vegetables.</p>
+      <p>Toys and perches stimulate their mind and prevent boredom.</p>
+      <p>Regular vet checkups prevent common diseases.</p>
+      <p>Keep their cages clean and in a safe environment.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <img id="popupImg">
+    <h2 id="popupTitle"></h2>
+    <p>Redirecting to pet page...</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 PawCare Pro | Designed with ❤️</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
