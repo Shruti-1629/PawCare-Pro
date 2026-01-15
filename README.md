@@ -65,4 +65,6 @@ Frontend Developer
 
 This project was built for learning and practice purposes to strengthen frontend development skills and demonstrate real-world web development concepts.
 
+Live site deployed using GitHub Pages
+
 
